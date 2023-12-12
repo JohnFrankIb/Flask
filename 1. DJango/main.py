@@ -1,5 +1,7 @@
 print("Testing DJango.")
 
-nombree = input("Ingresa tu nombre: ")
+nombre = input("Ingresa tu nombre: ")
 
 print(f"Bienvenido, {nombre}.")
+
+print("esto es el principio de algo grande.")
