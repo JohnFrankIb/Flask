@@ -1,0 +1,22 @@
+{% extends "./layout.html" %}
+
+{% block title %} Registrate {% endblock %}
+
+{% block body %}
+
+<h1>Registrate</h1>
+
+<form action="" method="post">
+    <label for="usuario">Nombre de usuario</label>
+    <br>
+    <input type="text" name="usuario" id="usuario">
+    <br>
+    <label for="contrasena">Contraseña</label>
+    <br>
+    <input type="password" name="contrasena" id="contrasena">
+    <br>
+    <br>
+    <input type="submit" value="Registrar">
+</form>
+
+{% endblock %}

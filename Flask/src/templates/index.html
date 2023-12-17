@@ -3,7 +3,12 @@
 {% block title %}{{ data.titulo }}{% endblock %}
 
 {% block body %}
-<h1>{{ data.bienvenida }}</h1>
+{% if data.nombre %}
+<h1>{{ data.bienvenida }}, {{data.nombre}} </h1>
+{% else %}
+<h1>{{ data.bienvenida }}, desconocido</h1>
+{% endif %}
+
 <h2> Cantidad de cursos: {{ data.numero_cursos }}</h2>
 <ul>
     {% for i in data.cursos %}
