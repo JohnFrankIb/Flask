@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">  
     <title> {% block title %}{% endblock %} </title>
-    <link rel="stylesheet" type=text/css href="{{ url_for('static/css', filename='styles.css') }}">
+    <link rel="stylesheet" type=text/css href="static/css/styles.css" >
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='css/styles.css') }}" >
 </head>
 <body>
-    <a href="">Inicio</a>
+    <a href="/">Inicio</a>
+    <a href="diana">Diana</a>
+    
     {% block body%}
     {% endblock %}
 
-    <!-- <script src="{{ url_for("static", filename="css") }}"></script> -->
+    <script src="{{ url_for('static', filename='js/layout.js') }}"></script>
 </body>
 </html>

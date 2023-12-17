@@ -15,11 +15,18 @@ def index():
     return render_template('index.html', cursos=cursos, data=data)
 
 
-
-
-@app.route("/Diana/")
+@app.route("/diana/")
 def diana():
-    return f"<h1>Te amo</h1>"
+    data={
+        "amor": "Te amooo",
+        "nombre": "Dianitaaaaa",
+        "carac": "chulaaa"
+    }
+    return render_template("diana.html", data=data)
+
+with app.test_request_context():
+    print(url_for("index"))
+    print(url_for("diana"))
 
 if __name__ == '__main__':
     app.run(debug=True)
